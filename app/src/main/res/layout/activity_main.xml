@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Evaluacion 1.4 Programación Android"
+            android:textAlignment="center"
+            android:textSize="24sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Dos opciones de tipo &quot;CheckBox&quot; junto a su correspondiente botón verficador de selección de opciones junto a una funcion Toast que marca que opciones fueron marcadas."
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TableRow
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <CheckBox
+                    android:id="@+id/cb1"
+                    android:layout_width="186dp"
+                    android:layout_height="wrap_content"
+                    android:text="opcion checkbox 1" />
+
+                <CheckBox
+                    android:id="@+id/cb2"
+                    android:layout_width="195dp"
+                    android:layout_height="wrap_content"
+                    android:text="opcion checkbox 2" />
+            </TableRow>
+
+        </TableLayout>
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="30dp"
+            android:onClick="comprobarCbox"
+            android:text="Comprobar checkbox" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="sans-serif"
+            android:text="Una barra de progreso (progres bar) con su respectivo botón de incio para el proceso de carga."
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/pb1"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="300dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="221dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:text="Iniciar ProgressBar" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dos &quot;Radio Buttons&quot; los cuales contienen una función &quot;Toast&quot; que indica cual es la selección marcada."
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RadioButton
+                android:id="@+id/rdb1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="opcion radio button 1" />
+
+            <RadioButton
+                android:id="@+id/rdb2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="opcion radio button 2" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Un &quot;Spinner&quot; que da la opcion de selección de dos opciones."
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="155dp"
+            android:layout_height="48dp"
+            android:layout_margin="15dp"
+            android:entries="@array/opciones" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Un &quot;Recycler View&quot; que muestra 3 redes sociales junto a 3 imagenes de tipo PNG."
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:layout_marginBottom="15dp"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/reclyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Un &quot;Rating Bar&quot; que contiene un botón para &quot;Calificar&quot; junto a una funcion &quot;Toast&quot; que infica cuantas estrellas se otorgó."
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:textStyle="bold" />
+
+        <RatingBar
+            android:id="@+id/rb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:numStars="5" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="cuantasEstrellas"
+            android:text="Calificar" />
+
+        <Button
+            android:id="@+id/btn4"
+            android:layout_width="326dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="En que Layout se creó este contenido." />
+    </LinearLayout>
+</ScrollView>

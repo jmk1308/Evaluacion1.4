@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Evaluacion14</string>
+    <string-array name="opciones">
+        <item>opción 1</item>
+        <item>opción 2</item>
+    </string-array>
+</resources>
